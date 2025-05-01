@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IronLink | Exercise Creator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>IronLink</h1>
+    <nav>
+      <a href="index.html">Log Workout</a>
+      <a href="stats.html">Progress & Stats</a>
+      <a href="profile.html">Profile & Customization</a>
+      <a href="exercises.html" class="active">Exercise Creator</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Manage Exercises</h2>
+    <form onsubmit="event.preventDefault(); addCustomExercise();">
+      <input type="text" id="newExercise" placeholder="New Exercise Name" required />
+      <button>Add Exercise</button>
+    </form>
+
+    <div class="exercise-list">
+      <h3>Stock Exercises</h3>
+      <ul id="stockList"></ul>
+
+      <h3>Your Custom Exercises</h3>
+      <ul id="customList"></ul>
+    </div>
+  </main>
+
+  <footer><p>&copy; 2025 IronLink</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

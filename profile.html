@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IronLink | Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>IronLink</h1>
+    <nav>
+      <a href="index.html">Log Workout</a>
+      <a href="stats.html">Progress & Stats</a>
+      <a href="profile.html" class="active">Profile & Customization</a>
+      <a href="exercises.html">Exercise Creator</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Profile Settings</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="number" id="weight" placeholder="Weight (lbs)" />
+    <button onclick="saveProfile()">Save Profile</button>
+    <div id="profileSummary"></div>
+
+    <h2>Customize Theme</h2>
+    <label>Accent Color: <input type="color" id="accentColor" /></label>
+    <button onclick="updateAccent()">Apply</button>
+  </main>
+
+  <footer><p>&copy; 2025 IronLink</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

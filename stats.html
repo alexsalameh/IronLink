@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IronLink | Stats</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>IronLink</h1>
+    <nav>
+      <a href="index.html">Log Workout</a>
+      <a href="stats.html" class="active">Progress & Stats</a>
+      <a href="profile.html">Profile & Customization</a>
+      <a href="exercises.html">Exercise Creator</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Your Progress</h2>
+    <div class="stat-card">
+      <p>Level: <span id="level">1</span></p>
+      <p>XP: <span id="xp">0</span> / <span id="xpMax">100</span></p>
+      <div class="bar"><div id="xpBar"></div></div>
+      <p>Strength: <span id="strength">10</span></p>
+      <p>Endurance: <span id="endurance">10</span></p>
+      <p>Rank: <span id="rankName">E</span></p>
+      <hr>
+      <p>Total Volume Lifted: <span id="totalVolume">0</span> lbs</p>
+      <p>Workouts Logged: <span id="workoutCount">0</span></p>
+    </div>
+  
+    <section class="stat-history" id="workoutHistory"></section>
+    <section class="stat-prs" id="personalRecords"></section>
+    </main>
+    
+
+  <footer><p>&copy; 2025 IronLink</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

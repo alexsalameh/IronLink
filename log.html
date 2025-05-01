@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IronLink | Log Workout</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>IronLink</h1>
+    <nav>
+      <a href="log.html" class="active">Log</a>
+      <a href="stats.html">Stats</a>
+      <a href="profile.html">Profile</a>
+      <a href="exercises.html">Exercise Creator</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Log Workout</h2>
+    <form id="logForm">
+      <label for="exerciseSelect">Exercise</label>
+      <select id="exerciseSelect" required></select>
+
+      <label for="sets">Sets</label>
+      <input type="number" id="sets" placeholder="Sets" required />
+
+      <label for="reps">Reps</label>
+      <input type="number" id="reps" placeholder="Reps" required />
+
+      <label for="weight">Weight (lbs)</label>
+      <input type="number" id="weight" placeholder="Weight" required />
+
+      <button type="submit">Log Workout</button>
+    </form>
+
+    <div id="logResults"></div>
+  </main>
+
+  <footer><p>&copy; 2025 IronLink</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
